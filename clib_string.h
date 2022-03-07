@@ -36,7 +36,7 @@ typedef struct StringS
  * @param[in] this_p  Pointer to the string.
  * @return Size of the string in memory.
  */
-inline SizeT string_sizeof(StringS* this_p)
+static inline SizeT string_sizeof(StringS* this_p)
 {
   return sizeof(this_p->length) + this_p->length * sizeof(this_p->characters[0]);
 }
