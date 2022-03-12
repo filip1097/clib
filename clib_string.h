@@ -20,11 +20,11 @@
  * @param length      The length of the string.
  * @param characters  Array of the characters.
  */ 
-typedef struct StringS
+typedef struct String
 {
   u32   length;
   char  characters[];
-} StringS;
+} String;
 
 /*> Constant Declarations *************************************************************************/
 
@@ -36,7 +36,7 @@ typedef struct StringS
  * @param[in] this_p  Pointer to the string.
  * @return Size of the string in memory.
  */
-static inline SizeT string_sizeof(StringS* this_p)
+static inline size string_sizeof(String* this_p)
 {
   return sizeof(this_p->length) + this_p->length * sizeof(this_p->characters[0]);
 }

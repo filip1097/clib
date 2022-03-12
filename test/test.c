@@ -28,8 +28,8 @@ static void test_string_sizeof();
 /*> Local Function Definitions ********************************************************************/
 static void test_string_sizeof()
 {
-  SizeT testSize = 8;
-  StringS* string_p = malloc(testSize);
+  size testSize = 8;
+  String* string_p = malloc(testSize);
   string_p->length = 4;
   assert(string_sizeof(string_p) == testSize);
 }

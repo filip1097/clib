@@ -16,7 +16,7 @@
 /**
  * @brief Size of memory in bytes (size_t).
  */
-typedef size_t SizeT;
+typedef size_t size;
 
 /*> Constant Declarations *************************************************************************/
 
